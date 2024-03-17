@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.project.gestao_vagas.modules.company.dto.CreateJObDTO;
+import com.project.gestao_vagas.modules.company.dto.CreateJobDTO;
 import com.project.gestao_vagas.modules.company.entities.JobEntity;
 import com.project.gestao_vagas.modules.company.useCases.CreateJobUseCase;
 
@@ -24,7 +24,7 @@ public class JobController {
 
 
     @PostMapping("/")
-    public JobEntity create(@Valid @RequestBody CreateJObDTO createJObDTO, HttpServletRequest request){
+    public JobEntity create(@Valid @RequestBody CreateJobDTO createJObDTO, HttpServletRequest request){
 
         var companyId = request.getAttribute("company_id");
         // jobEntity.setCompanyId(UUID.fromString(companyId.toString()));
