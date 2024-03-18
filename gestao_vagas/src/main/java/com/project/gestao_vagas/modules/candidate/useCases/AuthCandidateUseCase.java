@@ -21,7 +21,7 @@ import com.project.gestao_vagas.modules.candidate.repositories.CandidateReposito
 @Service
 public class AuthCandidateUseCase {
     
-    @Value("${security.token.secretCcandidate}")
+    @Value("${security.token.secretCandidate}")
     private String secretKey;
     
     @Autowired
