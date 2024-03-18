@@ -1,5 +1,17 @@
-{"properties": [{
-  "name": "security.token.secret",
-  "type": "java.lang.String",
-  "description": "A description for 'security.token.secret'"
-}]}
+{"properties": [
+  {
+    "name": "security.token.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'security.token.secret'"
+  },
+  {
+    "name": "security.token.secretCandidate",
+    "type": "java.lang.String",
+    "description": "A description for 'security.token.secretCandidate'"
+  },
+  {
+    "name": "security.token.secretCandidate",
+    "type": "java.lang.String",
+    "description": "A description for 'security.token.secretCandidate'"
+  }
+]}
