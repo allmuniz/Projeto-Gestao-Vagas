@@ -2,6 +2,7 @@ package com.project.gestao_vagas.modules.company.useCases;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Arrays;
 
 import javax.security.sasl.AuthenticationException;
 
@@ -48,7 +49,7 @@ public class AuthCompanyUseCase {
        var token = JWT.create().withIssuer(company.getName())
        .withSubject(company.getId().toString())
        .withExpiresAt(expiresIn)
-       .withClaim("roles", "COMPANY")
+       .withClaim("roles", Arrays.asList("COMPANY"))
        .sign(algorithm);
 
        var authCompanyResponseDTO = AuthCompanyResponseDTO.builder()
