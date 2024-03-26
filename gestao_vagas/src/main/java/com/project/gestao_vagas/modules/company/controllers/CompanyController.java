@@ -12,7 +12,7 @@ import com.project.gestao_vagas.modules.company.useCases.CreateCompanyUseCase;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.validation.Valid;z
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/company")
