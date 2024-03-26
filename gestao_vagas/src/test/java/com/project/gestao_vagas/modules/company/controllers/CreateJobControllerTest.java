@@ -1,8 +1,5 @@
 package com.project.gestao_vagas.modules.company.controllers;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.instanceOf;
-
 import java.util.UUID;
 
 import org.junit.Before;
@@ -21,7 +18,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.project.gestao_vagas.exceptions.CompanyNotFoundException;
 import com.project.gestao_vagas.modules.company.dto.CreateJobDTO;
 import com.project.gestao_vagas.modules.company.entities.CompanyEntity;
 import com.project.gestao_vagas.modules.company.repositories.CompanyRepository;
